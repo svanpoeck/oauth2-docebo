@@ -1,29 +1,28 @@
-# Github Provider for OAuth 2.0 Client
-[![Latest Version](https://img.shields.io/github/release/thephpleague/oauth2-github.svg?style=flat-square)](https://github.com/thephpleague/oauth2-github/releases)
+# Docebo Provider for OAuth 2.0 Client
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/thephpleague/oauth2-github/master.svg?style=flat-square)](https://travis-ci.org/thephpleague/oauth2-github)
-[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/thephpleague/oauth2-github.svg?style=flat-square)](https://scrutinizer-ci.com/g/thephpleague/oauth2-github/code-structure)
-[![Quality Score](https://img.shields.io/scrutinizer/g/thephpleague/oauth2-github.svg?style=flat-square)](https://scrutinizer-ci.com/g/thephpleague/oauth2-github)
-[![Total Downloads](https://img.shields.io/packagist/dt/league/oauth2-github.svg?style=flat-square)](https://packagist.org/packages/league/oauth2-github)
+[![Build Status](https://img.shields.io/travis/svanpoeck/oauth2-docebo/master.svg?style=flat-square)](https://travis-ci.org/svanpoeck/oauth2-docebo)
+[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/svanpoeck/oauth2-docebo.svg?style=flat-square)](https://scrutinizer-ci.com/g/svanpoeck/oauth2-docebo/code-structure)
+[![Quality Score](https://img.shields.io/scrutinizer/g/svanpoeck/oauth2-docebo.svg?style=flat-square)](https://scrutinizer-ci.com/g/svanpoeck/oauth2-docebo)
+[![Total Downloads](https://img.shields.io/packagist/dt/svanpoeck/oauth2-docebo.svg?style=flat-square)](https://packagist.org/packages/svanpoeck/oauth2-docebo)
 
-This package provides Github OAuth 2.0 support for the PHP League's [OAuth 2.0 Client](https://github.com/thephpleague/oauth2-client).
+This package provides Docebo OAuth 2.0 support for the PHP League's [OAuth 2.0 Client](https://github.com/thephpleague/oauth2-client).
 
 ## Installation
 
 To install, use composer:
 
 ```
-composer require league/oauth2-github
+composer require league/oauth2-docebo
 ```
 
 ## Usage
 
-Usage is the same as The League's OAuth client, using `\League\OAuth2\Client\Provider\Github` as the provider.
+Usage is the same as The League's OAuth client, using `\League\OAuth2\Client\Provider\Docebo` as the provider.
 
 ### Authorization Code Flow
 
 ```php
-$provider = new League\OAuth2\Client\Provider\Github([
+$provider = new League\OAuth2\Client\Provider\Docebo([
     'clientId'          => '{github-client-id}',
     'clientSecret'      => '{github-client-secret}',
     'redirectUri'       => 'https://example.com/callback-url',
@@ -72,7 +71,7 @@ if (!isset($_GET['code'])) {
 
 ### Managing Scopes
 
-When creating your Github authorization URL, you can specify the state and scopes your application may authorize.
+When creating your Docebo authorization URL, you can specify the state and scopes your application may authorize.
 
 ```php
 $options = [
@@ -120,6 +119,7 @@ Please see [CONTRIBUTING](https://github.com/thephpleague/oauth2-github/blob/mas
 
 ## Credits
 
+- [Steven Van Poeck](https://github.com/svanpoeck)
 - [Steven Maguire](https://github.com/stevenmaguire)
 - [All Contributors](https://github.com/thephpleague/oauth2-github/contributors)
 
